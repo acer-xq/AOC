@@ -1,0 +1,2 @@
+f=a=>(t='0b'+(t=a.map(e=>[...e]))[0].map((_,b)=>t.map(c=>c[b])).map(r=>+(r.reduce((x,y)=>x+[-1,1][y],0)>0)).join``)*(2**a[0].length-1-t);
+console.log(f(require('fs').readFileSync('./input.txt', 'utf8').split('\r\n')))
