@@ -1,0 +1,2 @@
+f=(a,b)=>((a=a.filter(x=>x).flatMap(x=>x.trim().split(/\s+/))).shift().split`,`.map(d=>b=!b&((a=a.map(x=>d-x?+x:~x)).some((_,y)=>y%5<1&a[s='slice'](y,y+5).every((x)=>x<0)|y%25<5&a[s](y,y+21,c=0|y/25).every((x,z)=>z%5>0|x<0)))?a[s](c*25,-~c*25).reduce((x,y)=>x+=y*=y>0,0)*d:b),b)
+console.log(f(require('fs').readFileSync('./input.txt', 'utf8').split('\r\n')))
